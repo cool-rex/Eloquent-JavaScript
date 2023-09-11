@@ -77,3 +77,27 @@ find(current * 3, `(${history} * 3)`);
 return find(1, "1");
 }
 console.log(findSolution(8)); 
+
+
+
+// Declare the myGlobal variable below this line
+let myGlobal=10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+  oopsGlobal =5;
+
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
